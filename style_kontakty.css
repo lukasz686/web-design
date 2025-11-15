@@ -61,6 +61,54 @@ body {
 }
 
 
+/*kontakt*/
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #13437a;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    height: 18px;
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 320px;
+
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-container {
+    padding: 40px 20px;
+}
+
 footer {
     margin-top: 60px;
     padding: 25px 20px;
@@ -98,7 +146,8 @@ footer p {
     opacity: 0.8;
 }
 
-/* dark-mode*/
+
+
 /* Animacja przejścia */
 body {
     transition: background-color 0.4s ease, color 0.4s ease;
@@ -147,50 +196,5 @@ body {
 .dark-mode #visit-counter,
 .dark-mode #date-time {
     color: #ffffff;
-}
-
-
-
-.cursor {
-    display: inline-block;
-    margin-left: 3px;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-}
-
-
-.text{
-    display: flex;
-    justify-content: center;   /* poziome wyśrodkowanie */
-    align-items: center;       /* pionowe wyśrodkowanie (jeśli chcesz) */
-    width: 100%;
-    margin-top: 40px;
-
-
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #13437a;
-    display: flex;
-    align-items: center;
-}
-
-
-#weather-widget {
-    position: fixed;
-    top: 20px;
-    left: 20px;   /* ← LEWY GÓRNY RÓG */
-    background: rgba(255, 255, 255, 0.85);
-    padding: 12px 18px;
-    border-radius: 10px;
-    font-size: 1rem;
-    color: #13437a;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    backdrop-filter: blur(6px);
-    z-index: 1000;
-    font-weight: 600;
 }
 

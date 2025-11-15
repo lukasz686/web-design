@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_kontakty.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="nav-button">HOME</a>
+        <button id="theme-toggle" class="theme-toggle">☀️ / 🌙</button>
+    </nav>
+
+    <main class="profile-section">
+        <div class="profile-container">
+            <h1 class="profile-name">Łukasz Wcisło</h1>
+        </div>
+        
+    </main>
+
+    <!-- FORMULARZ -->
+    <div class="form-container">
+    <form id="contactForm" class="contact-form">
+        <label>Imię:</label>
+        <input type="text" id="name">
+        <p class="error" id="nameError"></p>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <p class="error" id="emailError"></p>
+
+        <label>Wiadomość:</label>
+        <textarea id="message"></textarea>
+        <p class="error" id="messageError"></p>
+
+        <button type="submit">Wyślij</button>
+    </form>
+    </div>
+</main>
+
+<footer>
+        <div id="visit-counter"></div>
+        <div id="date-time"></div>
+        <p>Copyright 1999-2025 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
